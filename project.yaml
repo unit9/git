@@ -1,0 +1,23 @@
+api_version: 1
+
+modules:
+- name: backend
+  path: backend/python
+
+- name: frontend
+  path: frontend
+  modules:
+  - name: html
+    path: html
+
+  - name: ios
+    path: ios
+
+  - name: android
+    path: android
+
+  - name: unity
+    path: unity
+
+  - name: openframeworks
+    path: openframeworks
