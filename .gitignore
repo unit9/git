@@ -6,3 +6,6 @@
 
 # Editors
 .idea
+
+# Python
+*.pyc

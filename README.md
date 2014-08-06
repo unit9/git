@@ -1,4 +1,4 @@
-git
+Git
 ===
 
 Global Git Repository Boilerplate
