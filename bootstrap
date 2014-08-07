@@ -2,7 +2,7 @@
 
 import os, sys
 
-# Proxy to ./.system/test
+# Proxy to ./.system/bootstrap
 # Avoiding symlinks for their absolute nature.
-os.system(os.path.join(os.path.dirname(__file__), './.system/test') +
+os.system(os.path.join(os.path.dirname(__file__), './.system/bootstrap') +
   ' %s %s' % (os.path.abspath(os.path.dirname(__file__)), ' '.join(sys.argv[1:])))
