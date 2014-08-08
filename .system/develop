@@ -1,3 +1,14 @@
 #!/usr/bin/env python
 
-print 'script: develop'
+import sys
+from models.project import Project
+
+project = Project.get()
+
+module_name = None
+module_args = sys.argv[1:]
+if len(sys.argv) > 2:
+  module_name = sys.argv[2]
+  module_args = sys.argv[2:]
+
+project.perform_action('develop', module_name, module_args)

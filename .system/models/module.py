@@ -59,20 +59,24 @@ class Module:
     pass
 
   def bootstrap(self, args):
-    pass
+    self.run_script('bootstrap', args);
+    return
 
   def develop(self, args):
-    pass
+    self.run_script('develop', args);
+    return
 
   def test(self, args):
-    pass
+    self.run_script('test', args);
+    return
 
   def run(self, args):
     self.run_script('run', args);
-    pass
+    return
 
   def deploy(self, args):
-    pass
+    self.run_script('deploy', args);
+    return
 
   def get_path_to_script(self, script):
     return os.path.join(self.path, script)
